@@ -2457,3 +2457,7 @@ ul.links li:hover .bg {
     background-color: #aaa;
   }
 }
+
+    header {background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(https://pic3.zhimg.com/v2-398a230675fb3e7a01e172e744ef0b5d_1200x500.jpg);}
+    
+    
