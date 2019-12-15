@@ -227,6 +227,31 @@ window.onload=getCSS();
 <div id="marlin_lite_about_widget-2" class="wow bounceInUp widget marlin_lite_about_widget" data-wow-delay="0.1s">
 		
         
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'a02b6f547c7d5785b9c8',
+    clientSecret: 'ff56791c437e87e8374367a7a2fd9ded54c9c9cc',
+    repo: 'lynnguo666.github.io',
+    owner: 'LynnGuo666',
+    admin: ['LynnGuo666'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+          
+        
 		<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 <script src='https://blog.lynnguo666.site/media/scripts/Valine.min.js'></script>
 
