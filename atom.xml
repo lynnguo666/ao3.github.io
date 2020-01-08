@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.lynnguo666.site</id>
     <title>LynnGuo666的博客</title>
-    <updated>2019-12-20T10:31:38.058Z</updated>
+    <updated>2020-01-08T10:54:32.624Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.lynnguo666.site"/>
     <link rel="self" href="https://blog.lynnguo666.site/atom.xml"/>
@@ -11,7 +11,14 @@
 &lt;meta baidu-gxt-verify-token=&quot;322fe9df77d9c09ca5e75a41c692d908&quot;&gt;</subtitle>
     <logo>https://blog.lynnguo666.site/images/avatar.png</logo>
     <icon>https://blog.lynnguo666.site/favicon.ico</icon>
-    <rights>All rights reserved 2019, LynnGuo666的博客</rights>
+    <rights>All rights reserved 2020, LynnGuo666的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[关于自己制作的软件&破解的软件报毒的问题]]></title>
+        <id>https://blog.lynnguo666.site/post/DswxP8gQL</id>
+        <link href="https://blog.lynnguo666.site/post/DswxP8gQL">
+        </link>
+        <updated>2020-01-08T10:48:57.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[下载]]></title>
         <id>https://blog.lynnguo666.site/post/xia-zai</id>
