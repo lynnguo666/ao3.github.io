@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.lynnguo666.site</id>
     <title>LynnGuo666的博客</title>
-    <updated>2020-03-21T09:45:44.763Z</updated>
+    <updated>2020-03-21T10:39:49.029Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.lynnguo666.site"/>
     <link rel="self" href="https://blog.lynnguo666.site/atom.xml"/>
@@ -16,6 +16,13 @@
         <link href="https://blog.lynnguo666.site/post/POI4k3LQN/">
         </link>
         <updated>2020-03-18T08:03:55.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[广告拦截器——AdGuard Premium 破解版]]></title>
+        <id>https://blog.lynnguo666.site/post/8l-4xYSLV/</id>
+        <link href="https://blog.lynnguo666.site/post/8l-4xYSLV/">
+        </link>
+        <updated>2020-01-30T09:45:49.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[关于自己制作的软件&破解的软件报毒的问题]]></title>
