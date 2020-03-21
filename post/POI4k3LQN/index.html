@@ -7,7 +7,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="LynnGuo666的博客，分享LynnGuo666的博文">
 <meta name="theme-color" content="#000">
-<title>天气预报查询 | LynnGuo666的博客</title>
+<title>Evolution Host 免费提供美国4H/4G/80G SSD/1G端口/免费VPS | LynnGuo666的博客</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1584778004293">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
@@ -27,8 +27,8 @@
 
 
 
-    <meta name="description" content="天气预报查询" />
-    <meta name="keywords" content="" />
+    <meta name="description" content="Evolution Host 免费提供美国4H/4G/80G SSD/1G端口/免费VPS" />
+    <meta name="keywords" content="VPS,免费" />
   </head>
   <body>
     <div class="head-top-line"></div>
@@ -157,7 +157,8 @@
       <div class="sidebar-body gemini" id="sidebar_body">
         
           
-            
+            <div class="post-side-meta" id="post_side_meta">
+              
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="https://blog.lynnguo666.site/images/avatar.png"/>
@@ -227,6 +228,196 @@
   </div>
 
 </div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper auto-number auto" id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E6%9C%8D%E5%8A%A1%E5%95%86%E4%BB%8B%E7%BB%8D">服务商介绍</a></li>
+<li><a href="#%E5%85%8D%E8%B4%B9vps">免费VPS</a></li>
+<li><a href="#%E5%85%8D%E8%B4%B9%E7%94%B3%E8%AF%B7">免费申请</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+
+<script>
+
+let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1; 
+let active = 'active-show', activeClass = 'active-current';
+let tocWrapper = document.querySelector('#toc_wrapper');
+let tocContent = tocWrapper.children[0];
+let autoNumber = tocWrapper&&tocWrapper.classList.contains('auto-number');
+
+function addTocNumber(elem, deep) {
+  if (!elem) {
+    return;
+  }
+  let prop = elem.__proto__;
+
+  if (prop === HTMLUListElement.prototype) {
+    for (let i = 0; i < elem.children.length; i++) {
+      addTocNumber(elem.children[i], deep + (i + 1) + '.');
+    }
+  } else if (prop === HTMLLIElement.prototype) {
+    // 保存li元素
+    if (elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
+      lList.push(elem);
+    }
+    for (let i = 0; i < elem.children.length; i++) {
+      let cur = elem.children[i];
+      if (cur.__proto__ === HTMLAnchorElement.prototype) {
+        if (autoNumber) {
+          cur.text =  deep + ' ' + cur.text;
+        }
+      } else if (cur.__proto__ === HTMLUListElement.prototype) {
+        addTocNumber(cur, deep);
+      }
+    }
+  }
+}
+
+function removeParentActiveClass() {
+  let parents = tocContent.querySelectorAll('.'+active)
+  parents.forEach(function(elem) {
+    elem.classList.remove(active);
+  });
+}
+
+function addActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.add(activeClass);
+  }
+}
+
+function removeActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.remove(activeClass);
+  }
+}
+
+function addActiveLiElemment(elem, parent) {
+  if (!elem || elem === parent) {
+    return;
+  } else {
+    if (elem.__proto__ === HTMLLIElement.prototype) {
+      elem.classList.add(active);
+    }
+    addActiveLiElemment(elem.parentElement, parent);
+  }
+}
+
+function showToc() {
+  if (tocWrapper) {
+    postBody = document.querySelector('#post_body');
+    for (let i = 0; i < postBody.children.length; i++) {
+      if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+        hList.push(postBody.children[i]);
+      }
+    }
+    if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+    } else if (tocWrapper.classList.contains('no_compress')){
+      tocContent.classList.add('expanded');
+    } else {
+      if (hList.length > 10) {
+        active = 'active-hidden'
+        tocContent.classList.add('closed');
+      } else {
+        tocContent.classList.add('expanded');
+      }
+    }
+  }
+}
+
+(function() {
+  // 处理不是从#一级标题开始目录
+  if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
+    let con = tocContent.children[0].children[0];
+    tocContent.innerHTML = con.innerHTML;
+  }
+  addTocNumber(tocContent, '');
+})();
+
+document.addEventListener('scroll', function(e) {
+  if (lList.length <= 0) {
+    return;
+  }
+  let scrollTop = document.scrollingElement.scrollTop + 10;
+  let dir;
+
+  if (lastTop - scrollTop > 0) {
+    dir = 'up';
+  } else {
+    dir = 'down';
+  }
+
+  lastTop = scrollTop;
+  if (scrollTop <= 0) {
+    if (lastIndex >= 0 && lastIndex < hList.length) {
+      lList[lastIndex].classList.remove(activeClass);
+    }
+    return;
+  }
+
+  let current = 0, hasFind = false;
+  for (let i = 0; i < hList.length; i++) {
+    if (hList[i].offsetTop > scrollTop) {
+      current = i;
+      hasFind = true;
+      break;
+    }
+  }
+  if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+    current = hList.length - 1;
+  } else {
+    current--;
+  }
+  if (dir === 'down') {
+    if (current > lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex) 
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  } else {
+    if (current < lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex);
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  }
+});
+
+window.addEventListener('load', function() {
+  showToc();
+  document.querySelector('#sidebar').style='display: block;';
+  tocWrapper.classList.add('toc-active');
+  setTimeout(function() {
+    if ("createEvent" in document) {
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("scroll", false, true);
+      document.dispatchEvent(evt);
+    }
+    else {
+      document.fireEvent("scroll");
+    }
+  }, 500)
+})
+
+</script>
+            </div>
           
         
       </div>
@@ -314,8 +505,8 @@
             <div class="section bg-color post post-page">
               <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://blog.lynnguo666.site/post/Ji_fL2N0V/">
-      天气预报查询
+    <a class="post-title-link" href="https://blog.lynnguo666.site/post/POI4k3LQN/">
+      Evolution Host 免费提供美国4H/4G/80G SSD/1G端口/免费VPS
     </a>
   </h1>
   <div class="post-meta">
@@ -323,25 +514,44 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
-      <span>2019-10-06</span>
+      <span>2020-03-18</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
+      <span class="meta-item">
+        <i class="fa fa-folder-o"></i>
+        <span class="pc-show">分类于</span>
+        
+          
+            <a href="https://blog.lynnguo666.site/tag/Hs552xoIe/">
+              <span>VPS</span>
+            </a>、
+          
+        
+          
+            <a href="https://blog.lynnguo666.site/tag/vyHiCB7CBC/">
+              <span>免费</span>
+            </a>
+          
+        
+      </span>
+      <span class="post-meta-divider">|</span>
+    
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>1分钟</span>
+      <span>2分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>16<span class="pc-show">字数</span></span>
+      <span>387<span class="pc-show">字数</span></span>
     </span>
     
       
       
         
       
-      <span id="/post/Ji_fL2N0V/" data-flag-title="天气预报查询" class="meta-item pc-show leancloud_visitors">
+      <span id="/post/POI4k3LQN/" data-flag-title="Evolution Host 免费提供美国4H/4G/80G SSD/1G端口/免费VPS" class="meta-item pc-show leancloud_visitors">
         <span class="post-meta-divider">|</span>
         <i class="fa fa-eye"></i>
         <span>浏览量：<span class="leancloud-visitors-count" ></span></span>
@@ -350,21 +560,25 @@
   </div>
 </header>
               <div class="post-body next-md-body" id="post_body">
-                <div id="he-plugin-standard"></div>
-<script>
-WIDGET = {
-  CONFIG: {
-    "layout": 2,
-    "width": "230",
-    "height": "270",
-    "background": 5,
-    "dataColor": "4A4A4A",
-    "borderRadius": 5,
-    "key": "ab9f11eeacb047afa90066f905098f68"
-  }
-}
-</script>
-<script src="https://widget.heweather.net/standard/static/js/he-standard-common.js?v=1.1"></script>
+                <h3 id="服务商介绍">服务商介绍</h3>
+<p>Evolution Host 是一家自2012年以来一直存在，并且自2013年以来一直在托管解决方案方面进行交易（以前称为evolutionhost.co.uk）。我们希望每6个月左右为品牌引入新技术，新位置和/或新服务，从而保持与时俱进的吸引力。 我们提供100％专用的KVM资源，具有稳定的CPU时间可用性和高时钟速度。阅读：不进行节流或标记化。我们的VPS特别适合游戏服务器托管，其CPU核心时钟高达5.0Ghz，从而实现了很高的单核性能。高时钟速度对于更传统的工作负载也有好处。<br>
+Evolution Host 最近在lowendbox推出了免费VPS的活动! 无需信用卡！<br>
+博主正在申请，免费期限：永久（需要在网站一直挂着 Evolution Host的品牌！）</p>
+<h3 id="免费vps">免费VPS</h3>
+<p>免费VPS配置：<br>
+4Ghz +上的4个CPU内核<br>
+4GB DDR4内存<br>
+80GB SSD或350GB HDD<br>
+1Gb / s端口<br>
+60TB每月传输<br>
+先进的DDoS防护<br>
+Linux或Windows<br>
+欧洲/美国位置</p>
+<h3 id="免费申请">免费申请</h3>
+<p>申请地址： https://evolution-host.com/free-vps.php<br>
+申请要求：我们不接受色情网站的申请。网站的受欢迎程度和相关性将是每个申请人的最大决定因素。如果您认为自己的网站不符合上述规范，请不要担心，我们可以为您提供替代的免费VPS软件包。<br>
+更多：https://lowendbox.com/blog/evolution-host-unique-offer-for-leb-free-enterprise-grade-vps-for-those-who-qualify/</p>
+
               </div>
               <div class="post-footer">
   <ul class="post-copyright">
@@ -374,7 +588,7 @@ WIDGET = {
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://blog.lynnguo666.site/post/Ji_fL2N0V/" title="天气预报查询">天气预报查询</a>
+      <a href="https://blog.lynnguo666.site/post/POI4k3LQN/" title="Evolution Host 免费提供美国4H/4G/80G SSD/1G端口/免费VPS">Evolution Host 免费提供美国4H/4G/80G SSD/1G端口/免费VPS</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -383,12 +597,20 @@ WIDGET = {
   </ul>
   <div class="tags">
     
+      <a href="https://blog.lynnguo666.site/tag/Hs552xoIe/"># VPS</a>
+    
+      <a href="https://blog.lynnguo666.site/tag/vyHiCB7CBC/"># 免费</a>
+    
   </div>
   <div class="nav">
     <div class="nav-prev">
       
     </div>
     <div class="nav-next">
+      
+        <a class="nav-pc-next" title="通知：网站内容由于版权问题已将全部内容删除" href="https://blog.lynnguo666.site/post/tqcHsSnIK/">通知：网站内容由于版权问题已将全部内容删除</a>
+        <a class="nav-mobile-next" title="通知：网站内容由于版权问题已将全部内容删除" href="https://blog.lynnguo666.site/post/tqcHsSnIK/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>
