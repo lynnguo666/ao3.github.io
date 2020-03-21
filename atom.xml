@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.lynnguo666.site</id>
     <title>LynnGuo666的博客</title>
-    <updated>2020-03-21T08:06:45.835Z</updated>
+    <updated>2020-03-21T09:36:56.146Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.lynnguo666.site"/>
     <link rel="self" href="https://blog.lynnguo666.site/atom.xml"/>
@@ -12,36 +12,29 @@
     <rights>All rights reserved 2020, LynnGuo666的博客</rights>
     <entry>
         <title type="html"><![CDATA[Evolution Host 免费提供美国4H/4G/80G SSD/1G端口/免费VPS]]></title>
-        <id>https://blog.lynnguo666.site/post/POI4k3LQN/</id>
-        <link href="https://blog.lynnguo666.site/post/POI4k3LQN/">
+        <id>https://blog.lynnguo666.site/POI4k3LQN/</id>
+        <link href="https://blog.lynnguo666.site/POI4k3LQN/">
         </link>
         <updated>2020-03-18T08:03:55.000Z</updated>
     </entry>
     <entry>
-        <title type="html"><![CDATA[通知：网站内容由于版权问题已将全部内容删除]]></title>
-        <id>https://blog.lynnguo666.site/post/tqcHsSnIK/</id>
-        <link href="https://blog.lynnguo666.site/post/tqcHsSnIK/">
-        </link>
-        <updated>2020-01-25T06:26:13.000Z</updated>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[关于自己制作的软件&破解的软件报毒的问题]]></title>
-        <id>https://blog.lynnguo666.site/post/DswxP8gQL/</id>
-        <link href="https://blog.lynnguo666.site/post/DswxP8gQL/">
+        <id>https://blog.lynnguo666.site/DswxP8gQL/</id>
+        <link href="https://blog.lynnguo666.site/DswxP8gQL/">
         </link>
         <updated>2020-01-08T10:48:57.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[下载]]></title>
-        <id>https://blog.lynnguo666.site/post/xia-zai/</id>
-        <link href="https://blog.lynnguo666.site/post/xia-zai/">
+        <id>https://blog.lynnguo666.site/xia-zai/</id>
+        <link href="https://blog.lynnguo666.site/xia-zai/">
         </link>
         <updated>2019-09-22T05:52:37.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[问题反馈/提出建议]]></title>
-        <id>https://blog.lynnguo666.site/post/wen-ti-fan-kui-ti-chu-jian-yi/</id>
-        <link href="https://blog.lynnguo666.site/post/wen-ti-fan-kui-ti-chu-jian-yi/">
+        <id>https://blog.lynnguo666.site/wen-ti-fan-kui-ti-chu-jian-yi/</id>
+        <link href="https://blog.lynnguo666.site/wen-ti-fan-kui-ti-chu-jian-yi/">
         </link>
         <updated>2019-07-23T11:19:30.000Z</updated>
     </entry>
