@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ao3.lynnguo666.site</id>
-    <title>LynnGuo666的博客</title>
-    <updated>2020-03-22T02:16:30.968Z</updated>
+    <title>AO3镜像站</title>
+    <updated>2020-03-22T02:18:14.522Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ao3.lynnguo666.site"/>
     <link rel="self" href="https://ao3.lynnguo666.site/atom.xml"/>
-    <subtitle>LynnGuo666的博客，分享LynnGuo666的博文</subtitle>
+    <subtitle>AO3镜像站,提供在某些地区无法访问AO3的解决方案</subtitle>
     <logo>https://ao3.lynnguo666.site/images/avatar.png</logo>
     <icon>https://ao3.lynnguo666.site/favicon.ico</icon>
-    <rights>All rights reserved 2020, LynnGuo666的博客</rights>
+    <rights>All rights reserved 2020, AO3镜像站</rights>
+    <entry>
+        <title type="html"><![CDATA[赞助]]></title>
+        <id>https://ao3.lynnguo666.site/donate/</id>
+        <link href="https://ao3.lynnguo666.site/donate/">
+        </link>
+        <updated>2020-03-22T02:17:15.000Z</updated>
+    </entry>
 </feed>
